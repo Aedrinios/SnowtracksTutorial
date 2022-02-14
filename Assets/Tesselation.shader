@@ -31,7 +31,7 @@
                 float maxDist = 25.0;
                 return UnityDistanceBasedTess(v0.vertex, v1.vertex, v2.vertex, minDist, maxDist, _Tess);
             }
-
+3
             sampler2D _DispTex;
             float _Displacement;
 
