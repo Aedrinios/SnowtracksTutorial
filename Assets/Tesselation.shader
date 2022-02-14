@@ -25,7 +25,7 @@
             };
 
             float _Tess;
-
+			//Min max dist - en unity unit distance min max du rendu de tesselation
             float4 tessDistance (appdata v0, appdata v1, appdata v2) {
                 float minDist = 10.0;
                 float maxDist = 25.0;
