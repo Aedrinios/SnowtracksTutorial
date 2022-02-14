@@ -249,9 +249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawShader: {fileID: 4800000, guid: d55a45cb14331064dbe3e131adb370ee, type: 3}
-  terrain: {fileID: 0}
-  brushSize: 0
-  brushStrength: 0
+  terrain: {fileID: 1557599444}
+  brushSize: 5
+  brushStrength: 0.4
 --- !u!135 &879934027
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -322,7 +322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879934025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.523, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -424,6 +424,7 @@ GameObject:
   - component: {fileID: 1557599449}
   - component: {fileID: 1557599446}
   - component: {fileID: 1557599445}
+  - component: {fileID: 1557599450}
   m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
@@ -523,3 +524,18 @@ MonoBehaviour:
   brushSize: 500
   brushStrength: 0.863
   drawShader: {fileID: 4800000, guid: d55a45cb14331064dbe3e131adb370ee, type: 3}
+--- !u!114 &1557599450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557599444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eef1f0a9d13ac74c96a46bb2bcc4f69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowFallShader: {fileID: 4800000, guid: 8ce63bd9ae0274542a01ef88d5e56cbc, type: 3}
+  flakeAmount: 0.03
+  flakeOpacity: 0.15
